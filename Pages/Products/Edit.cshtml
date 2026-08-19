@@ -1,0 +1,43 @@
+@page
+@model HamroDaraz.Pages.Products.EditModel
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h1>Edit Product</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Product.Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Product.Title"></label>
+        <input asp-for="Product.Title" class="form-control" />
+        <span asp-validation-for="Product.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Product.Description"></label>
+        <input asp-for="Product.Description" class="form-control" />
+        <span asp-validation-for="Product.Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Product.Production"></label>
+        <input asp-for="Product.Production" class="form-control" />
+        <span asp-validation-for="Product.Production" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Product.Price"></label>
+        <input asp-for="Product.Price" class="form-control" />
+        <span asp-validation-for="Product.Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Product.CategoryId"></label>
+        <select asp-for="Product.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+        <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
