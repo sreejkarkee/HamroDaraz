@@ -6,6 +6,16 @@ a.navbar-brand[b-rhfuawwdbw] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 4px 30px var(--shadow-color);
 }
 
 a[b-rhfuawwdbw] {
@@ -18,7 +28,8 @@ a[b-rhfuawwdbw] {
   border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active[b-rhfuawwdbw], .nav-pills .show > .nav-link[b-rhfuawwdbw] {
+.nav-pills .nav-link.active[b-rhfuawwdbw],
+.nav-pills .show > .nav-link[b-rhfuawwdbw] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
@@ -32,7 +43,7 @@ a[b-rhfuawwdbw] {
 }
 
 .box-shadow[b-rhfuawwdbw] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 button.accept-policy[b-rhfuawwdbw] {
