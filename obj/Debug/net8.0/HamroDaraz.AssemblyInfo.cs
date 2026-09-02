@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HamroDaraz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30da5ea3252ab3a49e97de896d8a91f124f57b30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0afe294b50c21c5ff797f8126af0a76ad3c42963")]
 [assembly: System.Reflection.AssemblyProductAttribute("HamroDaraz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HamroDaraz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
