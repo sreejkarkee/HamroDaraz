@@ -1,0 +1,24 @@
+@page
+@model DashboardModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1 class="mb-4">Admin Dashboard</h1>
+<p><a asp-page="/Products/Index">Manage Products</a></p>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+@foreach (var item in Model.Products) {
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">@item.Title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">@item.Category?.Name</h6>
+                <p class="card-text">@item.Description</p>
+                <p class="card-text"><strong>Rs. @item.Price</strong></p>
+            </div>
+        </div>
+    </div>
+}
+</div>
