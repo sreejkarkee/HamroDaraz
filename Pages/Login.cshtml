@@ -4,21 +4,26 @@
     ViewData["Title"] = "Admin Login";
 }
 
-<h1>Admin Login</h1>
+<div class="login-wrapper">
+    <div class="login-card">
+        <h1>Welcome back</h1>
+        <p class="text-center text-muted mb-4" style="font-size: 0.9rem;">Log in to manage HamroDaraz</p>
 
-@if (Model.ErrorMessage != null)
-{
-    <div class="alert alert-danger">@Model.ErrorMessage</div>
-}
+        @if (Model.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">@Model.ErrorMessage</div>
+        }
 
-<form method="post" style="max-width: 400px;">
-    <div class="form-group mb-3">
-        <label>Email</label>
-        <input asp-for="Email" class="form-control" />
+        <form method="post">
+            <div class="form-group mb-3">
+                <label class="mb-1">Email</label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+                <label class="mb-1">Password</label>
+                <input asp-for="Password" type="password" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
     </div>
-    <div class="form-group mb-3">
-        <label>Password</label>
-        <input asp-for="Password" type="password" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">Log In</button>
-</form>
+</div>
