@@ -1,2 +1,2 @@
 # HamroDaraz
-An ecommerce website  built using .NET 
+An ecommerce website with basic CRUD operations  built using .NET 
